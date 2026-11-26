@@ -20,3 +20,27 @@ student1 = student()
 print(student1.get_marks())
 print(student1.set_marks(85))
 print(student1.get_marks())
+
+
+#multiple variables
+class student:
+    def __init__(self):
+        self.marks = 0
+        self.name = ""
+        self.roll_number = 0
+    def set_data(self, marks, name, roll_number):
+        self.marks = marks
+        self.name = name
+        self.roll_number = roll_number
+
+        if 0 <= marks <= 100:
+            self.marks = marks
+        else:
+            print("Invalid marks. Please enter a value between 0 and 100.")
+            self.marks = 0  # Set to default value if invalid
+    #getter method
+    def get_data(self):
+        print(f"Name: {self.name}, Roll Number: {self.roll_number}, Marks: {self.marks}")
+
+    #object creation
+student1 = student()
