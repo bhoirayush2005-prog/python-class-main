@@ -51,3 +51,6 @@ name = input("Enter name: ")
 roll_number = int(input("Enter roll number: "))
 
 s1.set_data(marks, name, roll_number)
+
+print("Student Details:")
+s1.get_data()
