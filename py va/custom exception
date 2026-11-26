@@ -1,0 +1,13 @@
+class InvalidAgeError(Exception):
+    pass
+
+
+age=int(input("Enter your age: "))
+try:
+    if age < 18:
+        raise InvalidAgeError("You must be 18 or older")
+    print("Eligible")
+except InvalidAgeError as e:
+    print("Error:", e)
+
+print("Program completed")
