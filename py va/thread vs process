@@ -1,0 +1,26 @@
+# process vs thread
+
+
+# running a program is process
+# to run a single task is thread
+
+
+
+import time
+def task1():
+    print("task 1")
+    time.sleep(2)   #wait for time for 2 sec
+    print("completed")
+def task2():
+    print("task 2")
+    time.sleep(1)  #wait for 1 sec after completing task 1
+    print("completed")
+
+task1()
+task2()
+
+
+#to skip the waiting period for task 2 we use multi threading that will run all def task at same time and wait
+#for that 
+
+
